@@ -520,31 +520,388 @@ footer a:hover {
   margin-bottom: 1rem;
 }
 
+/* ===== TEXT & OVERFLOW FIX ===== */
+* {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, button, span, div {
+  word-break: break-word;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+main {
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 100%;
+  overflow-x: hidden;
+  padding: 0 1rem;
+}
+
 /* ===== RESPONSIVE ===== */
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
+  .container {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+
+  header h1 {
+    font-size: 2rem;
+    line-height: 1.3;
+  }
+
+  header .lead {
+    font-size: 1rem;
+  }
+
   section h2 {
     font-size: 1.8rem;
   }
 
+  .btn-lg {
+    padding: 0.6rem 1rem !important;
+    font-size: 0.95rem !important;
+  }
+}
+
+@media (max-width: 992px) {
+  header .navbar-brand img {
+    max-width: 120px;
+  }
+
   header h1 {
-    font-size: 1.8rem;
+    font-size: 1.75rem;
+  }
+
+  .row g-4 > * {
+    padding-right: 0.5rem !important;
+    padding-left: 0.5rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  body, html {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .container {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  header .navbar-brand {
+    flex: 1;
+    min-width: 0;
+  }
+
+  header .navbar-brand img {
+    max-width: 100%;
+    height: auto;
+    width: 120px !important;
+  }
+
+  header .navbar-brand div {
+    padding: 0.3rem 0.5rem !important;
+    height: auto !important;
+  }
+
+  header h1 {
+    font-size: 1.4rem;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+  }
+
+  header h1 br {
+    content: " ";
+    display: none;
+  }
+
+  .display-4 {
+    font-size: 1.5rem !important;
+  }
+
+  header .lead {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+
+  section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  section > p {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
   }
 
   .trust-strip {
-    gap: 1rem;
-    padding: 1.5rem 0.5rem !important;
+    gap: 0.75rem;
+    padding: 1rem 0.5rem !important;
+    flex-wrap: wrap;
   }
 
   .trust-strip div {
-    flex: 0 1 auto;
+    flex: 0 1 48%;
+    min-width: auto;
+    font-size: 0.85rem;
+  }
+
+  .trust-strip strong {
+    display: block;
+    font-size: 1.2rem;
+  }
+
+  .trust-strip svg {
+    width: 32px !important;
+    height: 32px !important;
+  }
+
+  .row g-3 > *, .row g-4 > * {
+    padding-right: 0.5rem !important;
+    padding-left: 0.5rem !important;
+  }
+
+  .col-md-3, .col-md-4, .col-md-6 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .d-flex.gap-2 {
+    gap: 0.5rem !important;
+    flex-wrap: wrap;
+  }
+
+  .btn, .btn-lg, .btn-sm {
+    padding: 0.5rem 0.75rem !important;
+    font-size: 0.9rem !important;
+    width: auto;
     min-width: auto;
   }
 
-  section {
-    padding: 2rem 0;
+  .card-body {
+    padding: 1rem !important;
+  }
+
+  .benefit-card h5 {
+    font-size: 1rem;
+  }
+
+  .benefit-card p {
+    font-size: 0.85rem;
+  }
+
+  .testimonial-card {
+    padding: 1rem !important;
+    min-height: 150px !important;
+  }
+
+  .testimonial-text {
+    font-size: 0.85rem;
+  }
+
+  .instructor-card {
+    height: 250px !important;
+  }
+
+  .instructor-overlay h5 {
+    font-size: 1.1rem;
+  }
+
+  .instructor-overlay p {
+    font-size: 0.8rem;
   }
 
   .sticky-cta {
     display: none;
+  }
+
+  .accordion-button {
+    font-size: 0.95rem;
+    padding: 1rem !important;
+  }
+
+  footer {
+    padding: 1.5rem 1rem !important;
+  }
+
+  footer h6 {
+    font-size: 0.95rem;
+    margin-bottom: 0.75rem;
+  }
+
+  footer p, footer a {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 0 0.75rem;
+  }
+
+  header {
+    padding-top: 0.5rem !important;
+  }
+
+  header .navbar-brand img {
+    width: 100px !important;
+  }
+
+  header .py-5 {
+    padding: 1.5rem 0 !important;
+  }
+
+  header h1 {
+    font-size: 1.2rem;
+    line-height: 1.2;
+    margin-bottom: 0.75rem;
+  }
+
+  .badge {
+    font-size: 0.75rem !important;
+    padding: 0.25rem 0.5rem !important;
+  }
+
+  section h2 {
+    font-size: 1.3rem;
+    margin-bottom: 0.75rem;
+  }
+
+  section > p {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+
+  .trust-strip {
+    gap: 0.5rem;
+    padding: 0.75rem 0.25rem !important;
+  }
+
+  .trust-strip div {
+    flex: 0 1 45%;
+    font-size: 0.8rem;
+  }
+
+  .trust-strip strong {
+    font-size: 1rem;
+  }
+
+  .trust-strip svg {
+    width: 28px !important;
+    height: 28px !important;
+  }
+
+  .benefit-card {
+    min-height: 200px !important;
+    padding: 1rem !important;
+  }
+
+  .benefit-card svg {
+    width: 36px !important;
+    height: 36px !important;
+  }
+
+  .benefit-card h5 {
+    font-size: 0.95rem;
+  }
+
+  .benefit-card p {
+    font-size: 0.8rem;
+  }
+
+  .btn, .btn-lg {
+    padding: 0.5rem 0.75rem !important;
+    font-size: 0.85rem !important;
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .d-flex.gap-2 {
+    flex-direction: column;
+  }
+
+  .instructor-card {
+    height: 200px !important;
+  }
+
+  .instructor-overlay h5 {
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .instructor-overlay p {
+    font-size: 0.75rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .instructor-overlay .role {
+    margin-bottom: 0.5rem;
+  }
+
+  .col-md-3, .col-md-6 {
+    width: 100%;
+    padding-left: 0.25rem !important;
+    padding-right: 0.25rem !important;
+  }
+
+  .testimonial-card {
+    padding: 0.75rem !important;
+    min-height: 120px !important;
+  }
+
+  .testimonial-text {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .testimonial-author {
+    font-size: 0.85rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .testimonial-role {
+    font-size: 0.75rem;
+  }
+
+  .accordion-button {
+    font-size: 0.9rem;
+    padding: 0.75rem !important;
+  }
+
+  .modal-dialog {
+    margin: 0.5rem;
+  }
+
+  .form-control {
+    font-size: 0.95rem;
+    padding: 0.5rem;
+  }
+
+  footer {
+    padding: 1rem 0.75rem !important;
+  }
+
+  footer h6 {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+
+  footer p, footer a {
+    font-size: 0.8rem;
+    line-height: 1.4;
+  }
+
+  .d-none.d-lg-block {
+    display: none !important;
   }
 }
