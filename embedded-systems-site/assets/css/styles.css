@@ -658,7 +658,8 @@ main {
 }
 
 .container {
-  max-width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
   overflow-x: hidden;
   padding: 0 1rem;
 }
@@ -666,7 +667,7 @@ main {
 /* ===== RESPONSIVE ===== */
 @media (max-width: 1200px) {
   .container {
-    max-width: 100%;
+    max-width: 960px;
     padding: 0 1rem;
   }
 
@@ -711,7 +712,7 @@ main {
   }
 
   .container {
-    width: 100%;
+    max-width: 720px;
     padding: 0 1rem;
   }
 
