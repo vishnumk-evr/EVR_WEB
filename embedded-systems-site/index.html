@@ -277,30 +277,118 @@
       <section id="course-selection" class="mb-5" style="margin-top: 3rem;">
         <h2 style="margin-bottom: 0.5rem; font-weight: 700; font-size: 2rem; color: #1a1a2e;">Course Overview</h2>
         <p style="margin-bottom: 2rem; font-size: 1rem; color: #666;">Choose the learning path that suits your goals and experience level.</p>
+        
         <div class="row g-4 mb-4">
-          <div class="col-lg-6">
-            <div class="card h-100" style="border: 2px solid rgba(138, 43, 226, 0.2); border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); min-height: 200px; display: flex; flex-direction: column;">
-              <div class="card-body" style="display: flex; flex-direction: column; justify-content: space-between;">
-                <div>
-                  <h5 class="card-title" style="color: #8a2be2; font-weight: 700; margin-bottom: 1rem;">Foundation Course</h5>
-                  <p class="card-text"><strong>Duration:</strong> 3 months</p>
-                  <p class="card-text"><strong>Focus:</strong> Microcontrollers, C programming, basic peripherals, communication protocols.</p>
-                  <p class="card-text"><strong>Best for:</strong> Beginners and fresh graduates wanting core embedded systems skills.</p>
+          <!-- Foundation Course Card -->
+          <div class="col-lg-4 col-md-6">
+            <div class="course-card-new">
+              <div class="course-card-image-box">
+                <img src="assets/images/EMBEDDEDHARDWARE.jpg" alt="Foundation Course">
+              </div>
+              <div class="course-card-body">
+                <h5>Foundation Course</h5>
+                <p class="course-short-desc">Master core microcontroller programming and basics.</p>
+                <p class="course-duration">3 Months</p>
+                <div class="course-card-expand">
+                  <p class="course-full-desc"><strong>Focus:</strong> Microcontrollers, C programming, basic peripherals, communication protocols</p>
+                  <p class="course-best-for"><strong>Best For:</strong> Beginners and fresh graduates</p>
                 </div>
-                <a href="foundation-course-details.html" class="btn btn-primary btn-sm mt-3" style="align-self: flex-start;">Course Details</a>
+                <a href="foundation-course-details.html" class="btn btn-sm btn-primary mt-2">Learn More</a>
               </div>
             </div>
           </div>
-          <div class="col-lg-6">
-            <div class="card h-100" style="border: 2px solid rgba(138, 43, 226, 0.2); border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); min-height: 200px; display: flex; flex-direction: column;">
-              <div class="card-body" style="display: flex; flex-direction: column; justify-content: space-between;">
-                <div>
-                  <h5 class="card-title" style="color: #8a2be2; font-weight: 700; margin-bottom: 1rem;">Advanced Diploma</h5>
-                  <p class="card-text"><strong>Duration:</strong> 6 months + 3-month internship</p>
-                  <p class="card-text"><strong>Focus:</strong> RTOS, IoT, PCB design, capstone project, placement prep.</p>
-                  <p class="card-text"><strong>Best for:</strong> Professionals wanting advanced skills and guaranteed placement.</p>
+
+          <!-- Advanced Diploma Card -->
+          <div class="col-lg-4 col-md-6">
+            <div class="course-card-new">
+              <div class="course-card-image-box">
+                <img src="assets/images/edgeai.webp" alt="Advanced Diploma">
+              </div>
+              <div class="course-card-body">
+                <h5>Advanced Diploma</h5>
+                <p class="course-short-desc">Build enterprise systems with RTOS and IoT.</p>
+                <p class="course-duration">9 Months</p>
+                <div class="course-card-expand">
+                  <p class="course-full-desc"><strong>Focus:</strong> RTOS, IoT, PCB design, capstone project, placement prep</p>
+                  <p class="course-best-for"><strong>Best For:</strong> Professionals and advanced learners</p>
                 </div>
-                <a href="advanced-course-details.html" class="btn btn-primary btn-sm mt-3" style="align-self: flex-start;">Course Details</a>
+                <a href="advanced-course-details.html" class="btn btn-sm btn-primary mt-2">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- IoT Specialization Card -->
+          <div class="col-lg-4 col-md-6">
+            <div class="course-card-new">
+              <div class="course-card-image-box">
+                <img src="assets/images/iot.jpg" alt="IoT Specialization">
+              </div>
+              <div class="course-card-body">
+                <h5>IoT Specialization</h5>
+                <p class="course-short-desc">Connect and control smart devices seamlessly.</p>
+                <p class="course-duration">2 Months</p>
+                <div class="course-card-expand">
+                  <p class="course-full-desc"><strong>Focus:</strong> WiFi/BLE connectivity, Cloud integration, MQTT protocols</p>
+                  <p class="course-best-for"><strong>Best For:</strong> Professionals with embedded basics</p>
+                </div>
+                <a href="coursedetails.html" class="btn btn-sm btn-primary mt-2">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Robotics & Automation Card -->
+          <div class="col-lg-4 col-md-6">
+            <div class="course-card-new">
+              <div class="course-card-image-box">
+                <img src="assets/images/robotic.jpg" alt="Robotics & Automation">
+              </div>
+              <div class="course-card-body">
+                <h5>Robotics & Automation</h5>
+                <p class="course-short-desc">Bring intelligent machines to life with code.</p>
+                <p class="course-duration">3 Months</p>
+                <div class="course-card-expand">
+                  <p class="course-full-desc"><strong>Focus:</strong> Motor control, Sensors, Real-time systems, Robotics frameworks</p>
+                  <p class="course-best-for"><strong>Best For:</strong> Enthusiasts and engineers</p>
+                </div>
+                <a href="coursedetails.html" class="btn btn-sm btn-primary mt-2">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Automotive Embedded Card -->
+          <div class="col-lg-4 col-md-6">
+            <div class="course-card-new">
+              <div class="course-card-image-box">
+                <img src="assets/images/automotive.jpg" alt="Automotive Embedded">
+              </div>
+              <div class="course-card-body">
+                <h5>Automotive Embedded</h5>
+                <p class="course-short-desc">Develop embedded systems for vehicles.</p>
+                <p class="course-duration">4 Months</p>
+                <div class="course-card-expand">
+                  <p class="course-full-desc"><strong>Focus:</strong> CAN bus, Engine control, Safety systems, Diagnostics</p>
+                  <p class="course-best-for"><strong>Best For:</strong> Automotive enthusiasts</p>
+                </div>
+                <a href="coursedetails.html" class="btn btn-sm btn-primary mt-2">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Wearables & Edge AI Card -->
+          <div class="col-lg-4 col-md-6">
+            <div class="course-card-new">
+              <div class="course-card-image-box">
+                <img src="assets/images/wearables.jpg" alt="Wearables & Edge AI">
+              </div>
+              <div class="course-card-body">
+                <h5>Wearables & Edge AI</h5>
+                <p class="course-short-desc">Deploy AI models on edge devices.</p>
+                <p class="course-duration">3 Months</p>
+                <div class="course-card-expand">
+                  <p class="course-full-desc"><strong>Focus:</strong> TensorFlow Lite, Edge computing, Sensor fusion, ML deployment</p>
+                  <p class="course-best-for"><strong>Best For:</strong> Data scientists and engineers</p>
+                </div>
+                <a href="coursedetails.html" class="btn btn-sm btn-primary mt-2">Learn More</a>
               </div>
             </div>
           </div>
